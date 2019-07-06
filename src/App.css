@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap);
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input_container {
+  margin-bottom: 10px;
+  background: #D1D2D7;
+  padding: 30px 10px;
+  border-radius: 5px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input::placeholder {
+  text-indent: 5px;
+}
+
+input {
+  box-sizing: border-box;
+  border-color: #AAA;
+  border-width: 0px 0px 2px 0px;
+  color: white;
+  outline: none;
+  transition: all 0.3s;
+  padding: 0px 15x;
+  margin-right: 10px;
+  background: #E5D0E3;
+  font-size: 18px;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 4-18 */
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 19+ */
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* IE 10+ */
+
+input:focus {
+  border-bottom: 2px solid #FFF;
+}
+
+.pics {
+  display: flex;
+  max-width: 400px;
+  height: 100vh;
+  border: 1px solid #777;
+  margin-left: 10px;
+}
+
+.leftSideBar {
+  width: 200px;
+  height: 100%;
+  border: 1px solid #777;
+}
+
+.body {
+  border: 5px solid #777;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #777;
+  margin: 10px;
+}
+
+.add_btn {
+  cursor: pointer;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #58c996;
+  background-color: white;
+  border-radius: 40px;
+  border: 2px solid #58c996;
+  transition: all 0.2s;
+  letter-spacing: 1px;
+  font-family: 'Abel', sans-serif;
+}
+
+.add_btn:hover {
+  background: #58c996;
+  color: white;
+}
+
+.product_img {
+  max-width: 150px;
+  max-height: 150px;
+  padding: 5px;
+  margin: auto;
+}
+
+.list_product {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #f2f2f2;
+  position: relative;
+  height: 300px;
+}
+
+.list_product>h3 {
+  text-align: center;
+}
+
+.delete_btn {
+  width: 80px;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.update_btn {
+  width: 80px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.update_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s all ease;
+}
+
+.shadow {
+  font-size: 60px;
+  color: #B7FFD8;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: bold;
+  text-shadow: -3px -3px 0 #00D1A8, 3px -3px 0 #00D1A8, -3px 3px 0 #00D1A8, 3px 3px 0 #00D1A8, 4px 4px 0 #fff, 5px 5px 0 #fff, 6px 6px 0 #fff, 7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin: 0;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.trash_icon {
+  height: 15px;
+}
+
+.error_message {
+  color: red;
+  margin-left: 20px;
+}
+
+/* media queries */
+
+@media only screen and (max-width:600px) {
+  .input_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    max-width: 50%;
+    font-size: 14px;
+  }
+  .add_btn {
+    margin-top: 10px;
+  }
+  .body {
+    justify-content: center;
+  }
+  .shadow {
+    font-size: 30px;
+  }
+}
